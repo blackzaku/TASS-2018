@@ -1,0 +1,28 @@
+OTHER LABELING ERRORS:
+
+
+Sentence: El tratamiento para el pénfigo vulgar y foliáceo es el mismo, una o más medicinas para controlar los síntomas.
+
+Correct Entity: Action ( controlar - ['VM'] )
+Correct Entity: Concept ( foliáceo - ['AQ'] )
+Correct Entity: Concept ( síntomas - ['NC'] )
+Correct Entity: Concept ( pénfigo - ['NC'] )
+Correct Entity: Concept ( tratamiento - ['NC'] )
+Correct Entity: Concept ( pénfigo vulgar - ['NC', 'AQ'] )
+Correct Entity: Concept ( medicinas - ['NC'] )
+Missing Relation: property-of ("tratamiento" -> "foliáceo")
+Missing Relation: is-a ("medicinas" -> "tratamiento")
+Wrong Relation: target <-> property-of ("tratamiento" -> "pénfigo vulgar")
+Missing Relation: subject ("controlar" -> "medicinas")
+
+
+Sentence: El tratamiento de los trastornos de la boca varía dependiendo del problema.
+
+Wrong Entity: Concept <-> Action ( tratamiento - ['NC'] )
+Correct Entity: Concept ( boca - ['NC'] )
+Correct Entity: Action ( varía - ['VM'] )
+Correct Entity: Concept ( problema - ['NC'] )
+Correct Entity: Concept ( trastornos de la boca - ['NC', 'SP', 'DA', 'NC'] )
+Correct Entity: Concept ( trastornos - ['NC'] )
+Wrong Relation: property-of <-> target ("tratamiento" -> "trastornos de la boca")
+Missing Relation: subject ("varía" -> "problema")
